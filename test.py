@@ -1,7 +1,6 @@
 import gym
 import minerl
 import numpy as np
-from minerl.env.core import MineRLEnv
 from collections import OrderedDict
 import time
 
