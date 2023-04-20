@@ -56,6 +56,7 @@ obs=env.reset()
 print('Starting Action ...')
 
 action=env.action_space.no_op()
+print('action no_op ok')
 action['camera']=[0,90]
 obs,reward,done,info=env.step(action)
 time.sleep(1)
@@ -65,10 +66,11 @@ obs,reward,done,info=env.step(action)
 time.sleep(1)
 obs,reward,done,info=env.step(action)
 time.sleep(1)
-
+print('turn ok')
 action=env.action_space.no_op()
 action['move']=1
 obs,reward,done,info=env.step(action)
+print('move ok')
 time.sleep(1)
 
 print('Finish!')
