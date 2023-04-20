@@ -22,7 +22,7 @@ class MyActionSpace(gym.spaces.Dict):
 class MyObservationSpace(gym.spaces.Dict):
   def __init__(self):
     super().__init__(spaces={
-      'pov': gym.spaces.Box(low=0,high=255,shape=(84,84,3),dtype=np.unit8),
+      'pov': gym.spaces.Box(low=0,high=255,shape=(84,84,3),dtype=np.uint8),
     })
   
   def no_op(self):
